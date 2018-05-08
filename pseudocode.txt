@@ -1,0 +1,16 @@
+I. Set up html structure
+    a. Random number box
+    b. Four crystal buttons
+    c. Total score tracker
+    d. Wins and losses tracker
+    e. Section for "you win" or "you lose" messsage
+
+II. Set up CSS
+
+III. Set up JS
+    a. Set up an initiliaze function for choosing a random number & resetting everything
+    b. Set up a random number generator
+    c. Functions for generating random values for each crystal
+    d. Function for the score tracker
+    e. Function for determining wins/losses
+    f. Function to display wins/losses
