@@ -14,3 +14,7 @@
   text-align: center; 
 }
 
+.card-body {
+  width: 200;
+  height: 200;
+}
