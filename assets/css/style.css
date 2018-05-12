@@ -50,7 +50,7 @@ h3 {
   padding-top: 2%;
 }
 
-.score, .wins, .losses, .totalScore {
+.score, .wins, .losses, .totalScore, .winsCount, .lossesCount {
   color: whitesmoke;
   font-family: 'IM Fell English SC', serif;
   font-size: 36px;
@@ -60,6 +60,8 @@ h3 {
   padding-bottom: 2%;
 }
 
-.red-card, .purple-card, .green-card, .gold-card {
- padding-top: 2%;
+.randomNum, .redNumber, .purpleNumber, .greenNumber, .goldNumber, .yourScore {
+  color: whitesmoke;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 50px;
 }

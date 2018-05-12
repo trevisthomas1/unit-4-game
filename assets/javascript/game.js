@@ -2,29 +2,33 @@
 
 var randomNum = 0;
 var redNum = 0;
-var blueNum = 0;
-var yellowNum = 0;
+var purpleNum = 0;
+var goldNum = 0;
 var greenNum = 0;
 
-var scoreCounter = 0;
-var winCounter = 0;
-var loseCounter = 0;
+var yourScore = 0;
+var wins = 0;
+var losses = 0;
 
 //Functions
 
 function startGame() {
 
-    randomNum = Math.floor(Math.random() * 120) + 1;
+    randomNum = Math.floor(Math.random() * 70) + 50;
 
-    redNum = Math.floor(Math.random() * 20) + 1;
-
-    blueNum = Math.floor(Math.random() * 20) + 1;
-
-    yellowNum = Math.floor(Math.random() * 20) + 1;
-
+    redNum = Math.floor(Math.random() * 8) + 1;
+    purpleNum = Math.floor(Math.random() * 15) + 1;
+    goldNum = Math.floor(Math.random() * 12) + 1;
     greenNum = Math.floor(Math.random() * 20) + 1;
 
-    console.log(randomNum);
+    yourScore = 0;
+
+    $(".randomNum").html(randomNum);
+    $(".yourScore").html(yourScore);
+    $(".redNumber").empty();
+    $(".purpleNumber").empty();
+    $(".greenNumber").empty();
+    $(".goldNumber").empty();
 
 }
 
@@ -33,34 +37,100 @@ function startGame() {
 $(document).ready(function () {
 
     startGame();
-
+    $(".randomNum").html(randomNum);
+    $(".yourScore").html(yourScore);
     console.log("ready!");
-});
 
-//Red Crystal
+    //Red Crystal
 
-$(".red").click(function () {
-    $(".red-card").html(redNum);
-    console.log(redNum);
-});
+    $(".red").click(function () {
+        $(".redNumber").html(redNum);
+        yourScore += redNum;
+        $(".yourScore").html(yourScore);
+        if (yourScore === randomNum) {
+            alert("You win!");
+            wins++;
+            console.log(wins);
+            $(".winsCount").html(wins);
+            startGame();
+        }
+        if (yourScore > randomNum) {
+            alert("You lose!");
+            losses++;
+            console.log(losses);
+            $(".lossesCount").html(losses);
+            startGame();
+        };
 
-//Blue Crystal
+    });
 
-$(".blue").click(function () {
-    $(".blue-card").html(blueNum);
-    console.log(blueNum);
-});
+    //Blue Crystal
 
-//Yellow Crystal
+    $(".purple").click(function () {
+        $(".purpleNumber").html(purpleNum);
+        yourScore += purpleNum;
+        $(".yourScore").html(yourScore);
+        if (yourScore === randomNum) {
+            alert("You win!");
+            wins++;
+            console.log(wins);
+            $(".winsCount").html(wins);
+            startGame();
+        }
+        if (yourScore > randomNum) {
+            alert("You lose!");
+            losses++;
+            console.log(losses);
+            $(".lossesCount").html(losses);
+            startGame();
+        };
 
-$(".yellow").click(function () {
-    $(".yellow-card").html(yellowNum);
-    console.log(yellowNum);
-});
+    });
 
-//Green Crystal
+    //Yellow Crystal
 
-$(".green").click(function () {
-    $(".green-card").html(greenNum);
-    console.log(greenNum);
+    $(".green").click(function () {
+        $(".greenNumber").html(greenNum);
+        yourScore += greenNum;
+        $(".yourScore").html(yourScore);
+        if (yourScore === randomNum) {
+            alert("You win!");
+            wins++;
+            console.log(wins);
+            $(".winsCount").html(wins);
+            startGame();
+        }
+        if (yourScore > randomNum) {
+            alert("You lose!");
+            losses++;
+            console.log(losses);
+            $(".lossesCount").html(losses);
+            startGame();
+        };
+
+    });
+
+    //Green Crystal
+
+    $(".gold").click(function () {
+        $(".goldNumber").html(goldNum);
+        yourScore += goldNum;
+        $(".yourScore").html(yourScore);
+        if (yourScore === randomNum) {
+            alert("You win!");
+            wins++;
+            console.log(wins);
+            $(".winsCount").html(wins);
+            startGame();
+        }
+        if (yourScore > randomNum) {
+            alert("You lose!");
+            losses++;
+            console.log(losses);
+            $(".lossesCount").html(losses);
+            startGame();
+        };
+
+    });
+
 });
