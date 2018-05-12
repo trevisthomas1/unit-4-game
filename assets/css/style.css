@@ -1,20 +1,65 @@
 .jumbotron {
-  background-image: url("../images/jumbotron-bg.jpg");
+  background-image: url("../images/indy.jpg");
   background-size: cover;
   
 }
 
 .jumbotron h1 {
-  color: #000;
-  text-shadow: 3px 3px #fff;
-
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 8em;
+  font-family: 'IM Fell English SC', serif;
+  margin-bottom: 3%;
 }
 
 .instructions {
-  text-align: center; 
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 24px;
 }
 
 .card-body {
   width: 200;
   height: 200;
+}
+
+body {
+  text-align: center;
+  background-image: url("../images/black_paper_@2X.png");
+  width: 100%;
+}
+
+.title{
+  font-family: 'IM Fell English SC', serif;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 25px !important;
+}
+
+h3 {
+  color: whitesmoke;
+  font-family: 'IM Fell English SC', serif !important;
+  font-size: 28px !important;
+}
+
+.crystals {
+  padding-top: 2%;
+}
+
+.score, .wins, .losses, .totalScore {
+  color: whitesmoke;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 36px;
+}
+
+.red, .purple, .green, .gold {
+  padding-bottom: 2%;
+}
+
+.red-card, .purple-card, .green-card, .gold-card {
+ padding-top: 2%;
 }

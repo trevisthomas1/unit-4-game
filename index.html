@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
 
 </head>
 
@@ -20,69 +21,56 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 instructions">
-                <h2>Instructions</h2>
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-                    total score.</p>
-                <p>You win the game by matching your total score to the random number. You lost the game if your total score
-                    goes above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
+            <div class="col-lg-3 instructions">
+                <h2 class="title">Instructions</h2>
+                <p> Your objective is to match your score with the score to match by clicking on the crystals. If you fail, you'll
+                    be smushed! Click on each crystal to reveal its value. Good luck, Indy!</p>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-9">
-                <h2>Score to match:
-                    <span id="scoreToMatch"></span>
-                </h2>
+            <div class="col-lg-3">
+                <h2 class="score">Score To Match:</h2>
+                <h3></h3>
             </div>
-            <div class="col-sm-3">
-                <h3>Wins:
-                    <span id="wins"></span>
-                </h3>
-                <h3 class="text-left">Losses:
-                    <span id="losses"></span>
-                </h3>
-            </div>
-        </div>
 
-        <div class="row text-center">
-            <div class="col-sm-3">
-                <img src="assets/images/red-crystal.jpg" class="img-thumnail red" alt="Red Crystal" width="200" height="200" />
-                <div class="card">
-                    <div class="card-body red-card"></div>
-                </div>
+            <div class="col-lg-2">
+                <h2 class="totalScore">Your Score:</h2>
+                <h3></h3>
             </div>
-            <div class="col-sm-3">
-                <img src="assets/images/blue-crystal.jpg" class="img-thumbnail blue" alt="Blue Crystal" width="200" height="200" />
-                <div class="card">
-                    <div class="card-body blue-card"></div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <img src="assets/images/yellow-crystal.jpg" class="img-thumnail yellow" alt="Yellow Crystal" width="200" height="200" />
-                <div class="card">
-                    <div class="card-body yellow-card"></div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <img src="assets/images/green-crystal.jpg" class="img-thumnail green" alt="Green Crystal" width="200" height="200" />
-                <div class="card">
-                    <div class="card-body green-card"></div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Your total score is:
-                    <span id="totalScore"></span>
-                </h2>
+            <div class="col-lg-2">
+                <h2 class="wins">Wins:</h2>
+                <h3></h3>
             </div>
+
+            <div class="col-lg-2">
+                <h2 class="losses">Losses:</h2>
+                <h3></h3>
+            </div>
+
         </div>
     </div>
 
+
+
+    <div class="row text-center crystals">
+        <div class="col-sm-3">
+            <img src="assets/images/red-crystal.png" class="red" alt="Red Crystal" width="200" height="200" />
+            <h3></h3>
+        </div>
+        <div class="col-sm-3">
+            <img src="assets/images/purple-crystal.png" class="purple" alt="Purple Crystal" width="200" height="200" />
+            <h3></h3>
+        </div>
+        <div class="col-sm-3">
+            <img src="assets/images/green-crystal.png" class="green" alt="Green Crystal" width="200" height="200" />
+            <h3></h3>
+        </div>
+        <div class="col-sm-3">
+            <img src="assets/images/gold-crystal.png" class="gold" alt="Gold Crystal" width="200" height="200" />
+            <h3></h3>
+        </div>
+    </div>
+    </div>
 
 </body>
 <!-- JS -->
