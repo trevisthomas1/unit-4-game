@@ -30,11 +30,29 @@ function startGame() {
     $(".greenNumber").empty();
     $(".goldNumber").empty();
 
-}
+};
+
+
+function winGame() {
+    $(".header").html("You Win!");
+    wins++;
+    console.log(wins);
+    $(".winsCount").html(wins);
+    startGame();
+};
+
+function loseGame() {
+    $(".header").html("You lose!");
+    losses++;
+    console.log(losses);
+    $(".lossesCount").html(losses);
+    startGame();
+};
+
 
 //Starting the Game
 
-$(document).ready(function () {
+$(window).ready(function () {
 
     startGame();
     $(".randomNum").html(randomNum);
@@ -44,22 +62,15 @@ $(document).ready(function () {
     //Red Crystal
 
     $(".red").click(function () {
+        $(".header").html("Crystal Collector");
         $(".redNumber").html(redNum);
         yourScore += redNum;
         $(".yourScore").html(yourScore);
         if (yourScore === randomNum) {
-            alert("You win!");
-            wins++;
-            console.log(wins);
-            $(".winsCount").html(wins);
-            startGame();
+            winGame();
         }
         if (yourScore > randomNum) {
-            alert("You lose!");
-            losses++;
-            console.log(losses);
-            $(".lossesCount").html(losses);
-            startGame();
+            loseGame();
         };
 
     });
@@ -67,22 +78,15 @@ $(document).ready(function () {
     //Blue Crystal
 
     $(".purple").click(function () {
+        $(".header").html("Crystal Collector");
         $(".purpleNumber").html(purpleNum);
         yourScore += purpleNum;
         $(".yourScore").html(yourScore);
         if (yourScore === randomNum) {
-            alert("You win!");
-            wins++;
-            console.log(wins);
-            $(".winsCount").html(wins);
-            startGame();
+            winGame();
         }
         if (yourScore > randomNum) {
-            alert("You lose!");
-            losses++;
-            console.log(losses);
-            $(".lossesCount").html(losses);
-            startGame();
+            loseGame();
         };
 
     });
@@ -90,22 +94,15 @@ $(document).ready(function () {
     //Yellow Crystal
 
     $(".green").click(function () {
+        $(".header").html("Crystal Collector");
         $(".greenNumber").html(greenNum);
         yourScore += greenNum;
         $(".yourScore").html(yourScore);
         if (yourScore === randomNum) {
-            alert("You win!");
-            wins++;
-            console.log(wins);
-            $(".winsCount").html(wins);
-            startGame();
+            winGame();
         }
         if (yourScore > randomNum) {
-            alert("You lose!");
-            losses++;
-            console.log(losses);
-            $(".lossesCount").html(losses);
-            startGame();
+            loseGame();
         };
 
     });
@@ -113,22 +110,15 @@ $(document).ready(function () {
     //Green Crystal
 
     $(".gold").click(function () {
+        $(".header").html("Crystal Collector");
         $(".goldNumber").html(goldNum);
         yourScore += goldNum;
         $(".yourScore").html(yourScore);
         if (yourScore === randomNum) {
-            alert("You win!");
-            wins++;
-            console.log(wins);
-            $(".winsCount").html(wins);
-            startGame();
+            winGame();
         }
         if (yourScore > randomNum) {
-            alert("You lose!");
-            losses++;
-            console.log(losses);
-            $(".lossesCount").html(losses);
-            startGame();
+            loseGame();
         };
 
     });
